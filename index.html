@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Arson</a>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projet.html">Projet</a>
+        
+        <a href="contact.html">Contact</a>
+    </nav>
+    </header>
+
+    <section class="home">
+    <div class="home-content">
+        <h1>Hi, I'm Arson </h1>
+        <h3>Frontend Developer</h3>
+        <p>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Explicabo exercitationem veritatis 
+            voluptate illum a porro voluptatum quos 
+            possimus rerum maxime!
+        </p>
+
+        <div class="btn-box">
+            <a href="#">Hire Me</a>
+            <a href="#">Let's Talk</a>
+        </div>
+    </div>
+
+<div class="home-sci">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+
+    <!-- IMAGE AJOUTÉE ICI -->
+<div class="home-img">
+    <div class="glow-circle">
+        <span></span>
+        <span></span>
+        <div class="image">
+            <img src="images/moi.jpeg" alt="Arson Haja">
+        </div>
+    </div>
+</div>
+</section>
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+</script>
+</body>
+</html>
